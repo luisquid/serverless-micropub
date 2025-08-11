@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>serverless-micropub</title>
+		<style>
+			html {
+				color-scheme: light dark;
+				font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>serverless-micropub</h1>
+			<dl>
+				<dt><b>POST</b> <code>/micropub</code></dt>
+				<dd><a href="https://www.w3.org/TR/micropub/">Micropub endpoint</a> handler</dd>
+				<dt><b>GET</b> <code>/micropub?q={config,media-endpoint,syndicate-to,post-types}</code></dt>
+				<dd><a href="https://micropub.spec.indieweb.org/#querying">Query</a> your micropub configurations.</dd>
+				<dt><b>GET</b> <code>/micropub?q=source&url</code></dt>
+				<dd>Get properties for post in <code>url</code>. Optionally can also add <code>properties=</code> to only get those properties as the response. See <a href="https://micropub.spec.indieweb.org/#source-content">3.7.2 Source Content</a>.</dd>
+				<dd><a href="https://micropub.spec.indieweb.org/#querying">Query</a> your micropub configurations.</dd>
+				<dt><b>POST</b> <code>/media</code></dt>
+				<dd><a href="https://www.w3.org/TR/micropub/#media-endpoint">Micropub media endpoint</a> handler</dd>
+				<dt><b>GET</b> <code>/media?q=source</code></dt>
+				<dd>Get list of most recently uploaded files. See <a href="https://github.com/indieweb/micropub-extensions/issues/14">discussion about proposed extension</a>.</dd>
+			</dl>
+		</main>
+		<footer>
+			<a href="https://github.com/benjifs/serverless-micropub">Source Code</a> -
+			<a href="https://benji.dog">benji</a>
+		</footer>
+	</body>
+</html>
