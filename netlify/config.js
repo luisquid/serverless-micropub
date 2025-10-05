@@ -19,8 +19,8 @@ export const micropub = new Micropub({
 	store,
 	me: ME,
 	tokenEndpoint: TOKEN_ENDPOINT,
-	// contentDir: 'src',
-	// mediaDir: 'uploads',
+	contentDir: 'content',
+	mediaDir: 'uploads',
 	// https://micropub.spec.indieweb.org/#configuration
 	config: {
 		// 'media-endpoint': 'https://micropub.example.com/media',
