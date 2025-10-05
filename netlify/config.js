@@ -27,32 +27,32 @@ export const micropub = new Micropub({
 		// 'syndicate-to': [
 		// 	{ uid: 'https://fed.brid.gy/', name: 'w/ Bridgy Fed', checked: true },
 		// ],
-		// 'post-types': [
-		// 	{ type: 'note', name: 'Note' },
-		// 	{ type: 'photo', name: 'Photo' },
-		// 	{ type: 'reply', name: 'Reply' },
-		// 	{ type: 'bookmark', name: 'Bookmark' },
-		// 	{ type: 'like', name: 'Like' },
-		// 	{ type: 'article', name: 'Article' },
-		// 	{ type: 'rsvp', name: 'RSVP' },
-		// 	{ type: 'repost', name: 'Repost' },
-		// 	{ type: 'watch', name: 'Watch' },
-		// 	{ type: 'read', name: 'Read' },
-		// 	{ type: 'listen', name: 'Listen' },
-		// 	{ type: 'game', name: 'Game' },
-		// ],
+		'post-types': [
+		{ type: 'note', name: 'Note' },
+		{ type: 'photo', name: 'Photo' },
+		{ type: 'reply', name: 'Reply' },
+		{ type: 'bookmark', name: 'Bookmark' },
+		{ type: 'like', name: 'Like' },
+		{ type: 'article', name: 'Article' },
+		{ type: 'rsvp', name: 'RSVP' },
+		{ type: 'repost', name: 'Repost' },
+		{ type: 'watch', name: 'Watch' },
+		{ type: 'read', name: 'Read' },
+		{ type: 'listen', name: 'Listen' },
+		{ type: 'game', name: 'Game' },
+		],
 	},
-	// formatSlug: (type, filename) => {
-	// 	const typeToSlug = {
-	// 		like: 'likes',
-	// 		bookmark: 'bookmarks',
-	// 		rsvp: 'rsvp',
-	// 		article: 'articles',
-	// 		watch: 'watched',
-	// 		read: 'read',
-	// 		listen: 'listen',
-	// 		play: 'play'
-	// 	}
-	// 	return `${typeToSlug[type] || 'notes'}/${filename}`
-	// },
+	formatSlug: (type, filename) => {
+	 	const typeToSlug = {
+	 		like: 'likes',
+	 		bookmark: 'bookmarks',
+	 		rsvp: 'rsvp',
+	 		article: 'articles',
+	 		watch: 'watched',
+	 		read: 'read',
+	 		listen: 'listen',
+	 		play: 'play'
+	 	}
+	 	return `${typeToSlug[type] || 'notes'}/${filename}`
+	 },
 })
